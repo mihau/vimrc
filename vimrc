@@ -32,7 +32,7 @@ augroup vimrc_autocmds
     augroup END
 
 set t_Co=256
-colo mustang
+colo distiguished
 set autoindent
 syntax on
 set nu
