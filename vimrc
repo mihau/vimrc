@@ -7,10 +7,11 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
+Bundle 'bling/vim-airline'
 " Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
-Bundle 'klen/python-mode'
+" Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 
 " The bundles you install will be listed here
