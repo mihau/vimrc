@@ -1,8 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/mimick/Dokumenty/django-ziwg/ziwg/article'
 let g:netrw_dirhist_2='/home/mimick/Dokumenty/django-ziwg/ziwg'
 let g:netrw_dirhist_3='/home/mimick/Dokumenty/django-ziwg/ziwg/templates'
 let g:netrw_dirhist_4='/home/mimick/Dokumenty/django-ziwg/ziwg/article/templates'
 let g:netrw_dirhist_5='/home/mimick/Dokumenty/gospodarka/virtweb/taxi/manager/templates'
 let g:netrw_dirhist_6='/home/mimick/Dokumenty/gospodarka/virtweb/taxi/templates'
+let g:netrw_dirhist_7='/root/gitolite-admin/conf'
+let g:netrw_dirhist_8='/etc/apache2'
+let g:netrw_dirhist_9='/usr/local/lib/python2.7/dist-packages/patchwork/packages'

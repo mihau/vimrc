@@ -4,8 +4,6 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle
-" required! 
 Bundle 'gmarik/vundle'
 Bundle 'bling/vim-airline'
 " Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
