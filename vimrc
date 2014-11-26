@@ -9,8 +9,8 @@ Bundle 'bling/vim-airline'
 " Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
-" Bundle 'klen/python-mode'
-Bundle 'davidhalter/jedi-vim'
+Bundle 'klen/python-mode'
+" Bundle 'davidhalter/jedi-vim'
 
 " The bundles you install will be listed here
 
@@ -24,11 +24,11 @@ set laststatus=2
 
 augroup vimrc_autocmds
     autocmd!
-    " highlight characters past column 120
+    " autocmd highlight characters past column 80
     autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
-    autocmd FileType python match Excess /\%120v.*/
+    autocmd FileType python match Excess /\%80v.*/
     autocmd FileType python set nowrap
-    augroup END
+augroup END
 
 set t_Co=256
 colo mustang
@@ -62,7 +62,7 @@ let g:pymode_doc_key = 'K'
 
 "Linting
 let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
+let g:pymode_lint_checker = "pep8"
 " Auto check on save
 let g:pymode_lint_write = 1
 
