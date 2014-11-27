@@ -11,6 +11,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 " Bundle 'davidhalter/jedi-vim'
+Plugin 'rodjek/vim-puppet'
 
 " The bundles you install will be listed here
 
