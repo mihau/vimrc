@@ -13,6 +13,7 @@ Bundle 'klen/python-mode'
 " Bundle 'davidhalter/jedi-vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'godlygeek/tabular'
+Plugin 'croaker/mustang-vim'
 
 " The bundles you install will be listed here
 
