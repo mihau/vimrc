@@ -89,6 +89,6 @@ let g:pymode_options_max_line_length = 79
 
 " Don't autofold code
 let g:pymode_folding = 0
-
-" YCM
 let g:ycm_collect_identifiers_from_tags_files = 1
+hi Normal ctermbg=none
+highlight NonText ctermbg=none
