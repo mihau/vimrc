@@ -10,11 +10,12 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
-" Bundle 'davidhalter/jedi-vim'
+Bundle 'davidhalter/jedi-vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'godlygeek/tabular'
 Plugin 'croaker/mustang-vim'
-
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Valloric/YouCompleteMe'
 " The bundles you install will be listed here
 
 filetype plugin indent on
@@ -43,7 +44,9 @@ set sw=4
 set smarttab
 set expandtab
 
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 map <F2> :NERDTreeToggle<CR>
+nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
 " Python-mode
 " Activate rope
 " Keys:
@@ -52,6 +55,7 @@ map <F2> :NERDTreeToggle<CR>
 " <Ctrl-c>g     Rope goto definition
 " <Ctrl-c>d     Rope show documentation
 " <Ctrl-c>f     Rope find occurrences
+" G
 " <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
 " [[            Jump on previous class or function (normal, visual, operator modes)
 " ]]            Jump on next class or function (normal, visual, operator modes)
@@ -81,6 +85,10 @@ let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
+let g:pymode_options_max_line_length = 79
 
 " Don't autofold code
 let g:pymode_folding = 0
+
+" YCM
+let g:ycm_collect_identifiers_from_tags_files = 1
